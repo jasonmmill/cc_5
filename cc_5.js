@@ -37,7 +37,12 @@ let inventory = [ 5, 0, 12, 8, 0 ] // create array
 let inventoryMinusZero = inventory.filter(inv => inv > 0) // create filter
 console.log(inventoryMinusZero) // log results
 
-// Task 6: Revenue Calculation
+// Task 6: Reduce Method
 let sales = [ 500, 300, 200, 400 ] // create array
 let revenueCalc = sales.reduce((amt,total) => amt + total) // create reduce (to add)
 console.log(revenueCalc) // log results
+
+// Task 7: Find Method
+let customers = [ "Alice", "Bob", "Charlie", "David" ] // create array
+let findCustomer = customers.find(name => name === "Charlie") // create find
+console.log(findCustomer) // log results
