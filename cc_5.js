@@ -58,3 +58,7 @@ function applyDiscount(price, discount) { // create function and add parameters
     return price - (price * (discount / 100))
 }
 console.log("Discounted Price:",applyDiscount(100,10)) // log results
+
+// Task 10: Arrow Function
+let calculatePoints = (purchaseAmount) => Math.floor(purchaseAmount / 10) // create arrow function
+console.log(calculatePoints(75)) // log results
