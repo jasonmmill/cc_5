@@ -28,6 +28,11 @@ cartItems.shift() // remove item from beginning
 console.log(cartItems) // log results
 
 // Task 4: Map Method
-prices = [ 100, 200, 300 ] // create array
+let prices = [ 100, 200, 300 ] // create array
 let discountedPrices = prices.map(price => price * 0.9) // create map
 console.log(discountedPrices) // log results
+
+// Task 5: Filter Method
+let inventory = [ 5, 0, 12, 8, 0 ] // create array
+let inventoryMinusZero = inventory.filter(inv => inv > 0) // create filter
+console.log(inventoryMinusZero) // log results
