@@ -46,3 +46,9 @@ console.log(revenueCalc) // log results
 let customers = [ "Alice", "Bob", "Charlie", "David" ] // create array
 let findCustomer = customers.find(name => name === "Charlie") // create find
 console.log(findCustomer) // log results
+
+// Task 8: Function Declaration
+function calculateTax(amount, taxRate) { // create function and add parameters
+    return amount * (0.01 * taxRate)
+}
+console.log(`Tax Amount: ${calculateTax(100,10)}`) // log results using template literal
