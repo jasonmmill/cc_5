@@ -49,6 +49,12 @@ console.log(findCustomer) // log results
 
 // Task 8: Function Declaration
 function calculateTax(amount, taxRate) { // create function and add parameters
-    return amount * (0.01 * taxRate)
+    return amount * (taxRate / 100)
 }
 console.log(`Tax Amount: ${calculateTax(100,10)}`) // log results using template literal
+
+// Task 9: Function Expression
+function applyDiscount(price, discount) { // create function and add parameters
+    return price - (price * (discount / 100))
+}
+console.log("Discounted Price:",applyDiscount(100,10)) // log results
